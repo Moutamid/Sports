@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your language"
+        android:fontFamily="@font/abeezee"
+        android:padding="15sp"
+        android:layout_marginTop="12sp"
+        android:textSize="22sp"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/indo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="14sp"
+                    android:layout_margin="15sp"
+                    app:strokeWidth="0sp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="15sp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            app:civ_border_width="1sp"
+                            app:civ_border_color="@color/orange"
+                            android:src="@drawable/indonesia" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:text="Indonesia"
+                            android:layout_marginStart="12sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/thailand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="14sp"
+                    android:layout_margin="15sp"
+                    app:strokeWidth="0sp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="15sp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            app:civ_border_width="1sp"
+                            app:civ_border_color="@color/orange"
+                            android:src="@drawable/thailand" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:text="Thailand"
+                            android:layout_marginStart="12sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/vietnam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="14sp"
+                    android:layout_margin="15sp"
+                    app:strokeWidth="0sp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="15sp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            app:civ_border_width="1sp"
+                            app:civ_border_color="@color/orange"
+                            android:src="@drawable/vietnam" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:text="Vietnam"
+                            android:layout_marginStart="12sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
