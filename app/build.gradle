@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.moutamid.sports'
+    namespace 'com.sport.brandasia.cricfun'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.moutamid.sports"
+        applicationId "com.sport.brandasia.cricfun"
         minSdk 24
         targetSdk 33
         versionCode 1
