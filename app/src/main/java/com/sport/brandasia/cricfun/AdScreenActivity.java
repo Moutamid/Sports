@@ -57,7 +57,7 @@ public class AdScreenActivity extends AppCompatActivity {
 
 
         binding.link.setOnClickListener(v -> {
-            Uri uri = Uri.parse("https://hometests.site/"); // missing 'http://' will cause crashed
+            Uri uri = Uri.parse("https://visualdetail.cloud/"); // missing 'http://' will cause crashed
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             Stash.put("back", true);
