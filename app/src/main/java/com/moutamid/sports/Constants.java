@@ -24,6 +24,7 @@ import java.util.Locale;
 public class Constants {
     public static final String Language = "Language";
     public static final String selected = "selected";
+    public static final String FROM = "FROM";
 
     public static void checkApp(Activity activity) {
         String appName = "sportsApp";

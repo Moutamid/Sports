@@ -21,16 +21,19 @@ public class MainActivity extends AppCompatActivity {
 
         binding.indo.setOnClickListener(v -> {
             Stash.put(Constants.Language, "indo");
+            Stash.put(Constants.FROM, "Main");
             startActivity(new Intent(this, AdScreenActivity.class));
             finish();
         });
         binding.vietnam.setOnClickListener(v -> {
             Stash.put(Constants.Language, "vietnam");
+            Stash.put(Constants.FROM, "Main");
             startActivity(new Intent(this, AdScreenActivity.class));
             finish();
         });
         binding.thailand.setOnClickListener(v -> {
             Stash.put(Constants.Language, "thailand");
+            Stash.put(Constants.FROM, "Main");
             startActivity(new Intent(this, AdScreenActivity.class));
             finish();
         });

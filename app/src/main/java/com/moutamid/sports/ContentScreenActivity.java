@@ -37,22 +37,30 @@ public class ContentScreenActivity extends AppCompatActivity {
 
         binding.sportsBetting.setOnClickListener(v -> {
             Stash.put(Constants.selected, "sportsBetting");
-            startActivity(new Intent(this, DetailScreenActivity.class));
+            Stash.put(Constants.FROM, "Content");
+            startActivity(new Intent(this, AdScreenActivity.class));
+            finish();
         });
 
         binding.sportsTips.setOnClickListener(v -> {
             Stash.put(Constants.selected, "sportsTips");
-            startActivity(new Intent(this, DetailScreenActivity.class));
+            Stash.put(Constants.FROM, "Content");
+            startActivity(new Intent(this, AdScreenActivity.class));
+            finish();
         });
 
         binding.footballBetting.setOnClickListener(v -> {
             Stash.put(Constants.selected, "footballBetting");
-            startActivity(new Intent(this, DetailScreenActivity.class));
+            Stash.put(Constants.FROM, "Content");
+            startActivity(new Intent(this, AdScreenActivity.class));
+            finish();
         });
 
         binding.europeAsia.setOnClickListener(v -> {
             Stash.put(Constants.selected, "europeAsia");
-            startActivity(new Intent(this, DetailScreenActivity.class));
+            Stash.put(Constants.FROM, "Content");
+            startActivity(new Intent(this, AdScreenActivity.class));
+            finish();
         });
 
     }

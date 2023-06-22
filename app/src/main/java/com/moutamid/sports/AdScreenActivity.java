@@ -25,6 +25,7 @@ public class AdScreenActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         String lang = Stash.getString(Constants.Language);
+        String from = Stash.getString(Constants.FROM);
 
         if (lang.equals("indo")){
             binding.linkText.setText(buttonText[0]);
@@ -38,8 +39,20 @@ public class AdScreenActivity extends AppCompatActivity {
         }
 
         binding.close.setOnClickListener(v -> {
-            startActivity(new Intent(this, ContentScreenActivity.class));
-            finish();
+            if (from.equals("Main")) {
+                Stash.put("back", false);
+                startActivity(new Intent(this, ContentScreenActivity.class));
+                finish();
+            } else if (from.equals("Content")) {
+                Stash.put("back", false);
+                startActivity(new Intent(this, DetailScreenActivity.class));
+                finish();
+            } else {
+                Stash.put("back", false);
+                startActivity(new Intent(this, ContentScreenActivity.class));
+                finish();
+            }
+
         });
 
 
@@ -56,10 +69,21 @@ public class AdScreenActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        String from = Stash.getString(Constants.FROM);
         if (Stash.getBoolean("back", false)){
-            Stash.put("back", false);
-            startActivity(new Intent(this, ContentScreenActivity.class));
-            finish();
+            if (from.equals("Main")) {
+                Stash.put("back", false);
+                startActivity(new Intent(this, ContentScreenActivity.class));
+                finish();
+            } else if (from.equals("Content")) {
+                Stash.put("back", false);
+                startActivity(new Intent(this, DetailScreenActivity.class));
+                finish();
+            } else {
+                Stash.put("back", false);
+                startActivity(new Intent(this, ContentScreenActivity.class));
+                finish();
+            }
         }
     }
 }

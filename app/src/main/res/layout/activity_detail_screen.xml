@@ -25,7 +25,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="15sp"
-            android:fontFamily="@font/poppins"
             android:text="@string/W88_review_indo" />
 
     </androidx.core.widget.NestedScrollView>
